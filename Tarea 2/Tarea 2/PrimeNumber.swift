@@ -10,9 +10,9 @@ import UIKit
 
 class PrimeNumber: NSObject {
     var number: String
-    var color: String
+    var color: UIColor
     
-    init(number: String, color: String) {
+    init(number: String, color: UIColor) {
         self.number = number
         self.color = color
     }

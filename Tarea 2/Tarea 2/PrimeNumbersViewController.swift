@@ -33,12 +33,12 @@ class PrimeNumbersViewController: UIViewController {
                 appendData(_value:String(index))
             }
             else{
-                var _p = 0
+                var _p: Int = 0
                 for j in 1...index
                 {
                     if index%j == 0
                     {
-                        _p = _p+1
+                        _p += 1
                     }
                 }
             
@@ -52,13 +52,13 @@ class PrimeNumbersViewController: UIViewController {
     func appendData(_value: String)
     {
         let _label = _value
-        var _color = "C"
+        var _color: UIColor
         if _flat == 0
         {
-            _color = "O"
+            _color = UIColor.gray
             _flat = 1
         }else{
-            _color = "C"
+            _color = UIColor.white
             _flat = 0
         }
         
@@ -80,12 +80,7 @@ extension PrimeNumbersViewController: UITableViewDelegate, UITableViewDataSource
         
         let _primeNumber = primeNumbers[indexPath.row]
         cell.numberLabel.text = _primeNumber.number
-        if _primeNumber.color == "C" {
-            cell.backgroundColor = UIColor.darkGray
-        }
-        else{
-            cell.backgroundColor = UIColor(red: 3.0, green: 7.0, blue: 1.0, alpha: 1.0)
-        }
+        cell.backgroundColor = _primeNumber.color
         return cell
     }
     
