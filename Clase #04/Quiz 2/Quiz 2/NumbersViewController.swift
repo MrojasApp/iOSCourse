@@ -58,6 +58,7 @@ extension NumbersViewController: UITableViewDelegate, UITableViewDataSource{
         
         //if _numb.type == "P"
         //cell.tableView.backgrund
+        cell.backgroundColor = #111111
         
         return cell
     }
