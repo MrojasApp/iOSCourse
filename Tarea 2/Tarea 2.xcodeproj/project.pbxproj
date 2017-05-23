@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		36446A501ED0F0BA00C03A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36446A4F1ED0F0BA00C03A3D /* AppDelegate.swift */; };
 		36446A571ED0F0BA00C03A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36446A561ED0F0BA00C03A3D /* Assets.xcassets */; };
-		36446A5A1ED0F0BA00C03A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36446A581ED0F0BA00C03A3D /* LaunchScreen.storyboard */; };
 		36446A621ED0F56600C03A3D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36446A611ED0F56600C03A3D /* Storyboard.storyboard */; };
 		36446A641ED0F5E200C03A3D /* PrimeNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36446A631ED0F5E200C03A3D /* PrimeNumbersViewController.swift */; };
 		36446A671ED0F9F000C03A3D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36446A661ED0F9F000C03A3D /* Helper.swift */; };
@@ -22,7 +21,6 @@
 		36446A4C1ED0F0BA00C03A3D /* Tarea 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tarea 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36446A4F1ED0F0BA00C03A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36446A561ED0F0BA00C03A3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		36446A591ED0F0BA00C03A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36446A5B1ED0F0BA00C03A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36446A611ED0F56600C03A3D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		36446A631ED0F5E200C03A3D /* PrimeNumbersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeNumbersViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 				36446A651ED0F75000C03A3D /* CustomCell */,
 				36446A4F1ED0F0BA00C03A3D /* AppDelegate.swift */,
 				36446A561ED0F0BA00C03A3D /* Assets.xcassets */,
-				36446A581ED0F0BA00C03A3D /* LaunchScreen.storyboard */,
 				36446A5B1ED0F0BA00C03A3D /* Info.plist */,
 				36446A611ED0F56600C03A3D /* Storyboard.storyboard */,
 				36446A631ED0F5E200C03A3D /* PrimeNumbersViewController.swift */,
@@ -144,7 +141,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36446A6B1ED100C500C03A3D /* numbersTableViewCell.xib in Resources */,
-				36446A5A1ED0F0BA00C03A3D /* LaunchScreen.storyboard in Resources */,
 				36446A571ED0F0BA00C03A3D /* Assets.xcassets in Resources */,
 				36446A621ED0F56600C03A3D /* Storyboard.storyboard in Resources */,
 			);
@@ -166,17 +162,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		36446A581ED0F0BA00C03A3D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				36446A591ED0F0BA00C03A3D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		36446A5C1ED0F0BA00C03A3D /* Debug */ = {
@@ -276,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Tarea 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Billin-Inc.Tarea-2";
@@ -288,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Tarea 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Billin-Inc.Tarea-2";
@@ -315,6 +302,7 @@
 				36446A601ED0F0BA00C03A3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
