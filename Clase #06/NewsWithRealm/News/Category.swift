@@ -13,7 +13,7 @@ import RealmSwift
 //    case economy,sports, incidents, technology
 //}
 
-class Category: Object {
+class Category: s {
     
     dynamic var name = ""
     dynamic var imageName = ""
