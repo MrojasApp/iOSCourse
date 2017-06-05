@@ -38,6 +38,7 @@ class CoreDataManager: NSObject {
         news?.descriptionNews = description
         news?.createdAt = Date()
         
+        //news?.category = category
         category.addNewsObject(news!)
         saveContext()
     }

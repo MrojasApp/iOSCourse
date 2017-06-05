@@ -34,8 +34,6 @@ class NewsDetailTableViewController: UITableViewController {
     
     
     func saveNewsAction(){
-//        let news = News(titleNews: titleTextField.text!, descriptionNews: descriptionTextView.text!, createdAt: Date())
-//        delegate?.addNews(news: news)
         CoreDataManager.addNews(category: category!, title: titleTextField.text!, description: descriptionTextView.text!)
         
         navigationController?.popViewController(animated: true)
